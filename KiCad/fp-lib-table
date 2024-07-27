@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SVI2017")(type "KiCad")(uri "${KIPRJMOD}/SVI-2017.pretty")(options "")(descr ""))
+)

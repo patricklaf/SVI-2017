@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SVI-2017")(type "KiCad")(uri "${KIPRJMOD}/SVI-2017.kicad_sym")(options "")(descr "SVI-2017"))
+)
