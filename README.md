@@ -1,73 +1,75 @@
 # SVI-2017
 
-La carte SVI-2017 est la recréation de la carte d'interface pour RobotArm SVI 2000.
+English - [Français](LISEZMOI.md)
 
-La carte fonctionnelle en version 1.1 est compatible avec les ordinateurs MSX.
+The SVI-2017 board is the recreation of the interface board for the RobotArm SVI 2000.
+
+The functional board in version 1.1 is compatible with MSX computers.
 
 ![SVI-2017](docs/img/SVI-2017-20171211-105227.jpg)
 
-## Projet KiCad
+## KiCad Project
 
-Le projet original date de 2017.
+The original project dates from 2017.
 
-Le dossier [KiCad](KiCad/) contient le projet migré sur KiCad 8.0.4.
+The [KiCad](KiCad/) folder contains the project migrated to KiCad 8.0.4.
 
-L'archive originale [SVI-2017-201711091030.zip](https://github.com/patricklaf/SVI-2017/raw/main/KiCad/Gerber/SVI-2017-201711091030.zip) contient les fichiers Gerber nécessaires à la production du circuit imprimé. La fabrication a été testée avec succès par [Seeedstudio](https://www.seeedstudio.com/fusion_pcb.html).
+The original archive [SVI-2017-201711091030.zip](https://github.com/patricklaf/SVI-2017/raw/main/KiCad/Gerber/SVI-2017-201711091030.zip) contains the Gerber files needed to produce the PCB. The build has been successfully tested by [Seeedstudio](https://www.seeedstudio.com/fusion_pcb.html).
 
-Une [BOM interactive](https://patricklaf.github.io/SVI-2017/bom.html) est disponible pour consulter la liste des composants nécessaires et aide au montage.
+An [interactive BOM](https://patricklaf.github.io/SVI-2017/bom.html) is available to view the list of required components and help with assembly.
 
 ## ROM
 
-Le fichier [ROGO.ROM](ROM/ROGO.ROM) est l'image nécessaire à la programmation de l'EEPROM de la carte.
+The [ROGO.ROM](ROM/ROGO.ROM) file is the image needed to program the EEPROM of the board.
 
-Le fichier combine les éléments suivants :
+The file combines the following elements:
 
-- La ROM ROGO pour MSX.
-- La ROM ROGO modifiée pour MSX 2, MSX 2+ et MSX TurboR.
+- The ROGO ROM for MSX.
+- The modified ROGO ROM for MSX 2, MSX 2+ and MSX TurboR.
 
-## Utilisation
+## Usage
 
-Le commutateur DIP de la carte permet de sélectionner le mode de fonctionnement de la carte.
+The DIP switch on the board selects the operating mode of the board.
 
-Le commutateur 1 sélectionne la ROM ROGO ou le mode PIO.
+Switch 1 selects the ROGO ROM or PIO mode.
 
-Le commutateur 2 sélectionne la gamme de l'ordinateur utilisé pour activer la ROM compatible.
+Switch 2 selects the model of the computer used to activate the compatible ROM.
 
 ## ROGO
 
-Le langage ROGO, similaire au langage Logo permet de piloter le robot en utilisant des commandes.
+The ROGO language, similar to the Logo language, allows the robot to be controlled using commands.
 
-Un dessin du robot à l'écran reproduit les mouvements effectués.
+A drawing of the robot on the screen reproduces the movements made.
 
 ## PIO
 
-En mode PIO, les mouvements du robot sont réalisés en activant directement les moteurs, dans un sens ou dans un autre. Les ports 0 et 1 sont utilisés. Un mouvement est activé en positionnant à 1 le bit correspondant. Le mouvement cesse lorsque le bit est positionné à 0. 
+In PIO mode, the robot's movements are made by directly activating the motors, in one direction or another. Ports 0 and 1 are used. A movement is activated by setting the corresponding bit to 1. The movement stops when the bit is set to 0.
 
 Port 0
 
-| Bit | Mouvement                      |
-|:---:|:-------------------------------|
-| 0   | Axe 2, bras en avant           |
-| 1   | Axe 2, bras en arrière         |
-| 2   | Axe 1, rotation vers la gauche |
-| 3   | Axe 1, rotation vers la droite |
-| 4   | Axe 5, fermeture de la pince   |
-| 5   | Axe 5, ouverture de la pince   |
+| Bit | Movement               |
+|:---:|:-----------------------|
+| 0   | Axis 2, arm forward    |
+| 1   | Axis 2, arm back       |
+| 2   | Axis 1, left rotation  |
+| 3   | Axis 1, right rotation |
+| 4   | Axis 5, clamp closing  |
+| 5   | Axis 5, clamp opening  |
 
 Port 1
 
-| Bit | Mouvement                                  |
-|:---:|:-------------------------------------------|
-| 0   | Axe 3, bras vers le bas                    |
-| 1   | Axe 3, bras vers le haut                   |
-| 2   | Axe 1, rotation de la pince vers la gauche |
-| 3   | Axe 1, rotation de la pince vers la droite |
+| Bit | Movement                     |
+|:---:|:-----------------------------|
+| 0   | Axis 3, arm down             |
+| 1   | Axis 3, arm up               |
+| 2   | Axis 1, clamp rotation left  |
+| 3   | Axis 1, clamp rotation right |
 
 > [!CAUTION]
-> Il ne faut jamais activer simultanément les 2 mouvements d'un axe au risque d'endommager l'électronique de la carte. 
+> Never activate the 2 movements of an axis simultaneously, otherwise you risk damaging the electronics of the card.
 
-## Remerciements
+## Acknowledgments
 
-Ce projet n'aurait pu aboutir sans l'aide indispensable des membres du site [MSX Village](https://msxvillage.fr).
+This project could not have been completed without the invaluable help of the members of the [MSX Village](https://msxvillage.fr) website.
 
-Il existe un sujet dédié sur le forum du site : [Robotarm SVI le schéma](https://msxvillage.fr/forum/topic-326-1+robotarm-svi-le-schema.php).
+There is a dedicated topic on the site's forum: [Robotarm SVI the diagram](https://msxvillage.fr/forum/topic-326-1+robotarm-svi-le-schema.php).
