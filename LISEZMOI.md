@@ -18,6 +18,10 @@ L'archive originale [SVI-2017-201711091030.zip](https://github.com/patricklaf/SV
 
 Une [BOM interactive](https://patricklaf.github.io/SVI-2017/bom.html) est disponible pour consulter la liste des composants nécessaires et aide au montage.
 
+Vous pouvez commander directement le PCB à partir du projet partagé sur PCBWay.
+
+<a href="https://www.pcbway.com/project/shareproject/SVI_2017_board_b98df38c.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
+
 ## ROM
 
 Le fichier [ROGO.ROM](https://github.com/patricklaf/SVI-2017/raw/main/ROM/ROGO.ROM) est l'image nécessaire à la programmation de l'EEPROM de la carte.
