@@ -20,7 +20,7 @@ Une [BOM interactive](https://patricklaf.github.io/SVI-2017/bom.html) est dispon
 
 ## ROM
 
-Le fichier [ROGO.ROM](ROM/ROGO.ROM) est l'image nécessaire à la programmation de l'EEPROM de la carte.
+Le fichier [ROGO.ROM](https://github.com/patricklaf/SVI-2017/raw/main/ROM/ROGO.ROM) est l'image nécessaire à la programmation de l'EEPROM de la carte.
 
 Le fichier combine les éléments suivants :
 

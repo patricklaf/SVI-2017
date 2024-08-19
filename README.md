@@ -20,7 +20,7 @@ An [interactive BOM](https://patricklaf.github.io/SVI-2017/bom.html) is availabl
 
 ## ROM
 
-The [ROGO.ROM](ROM/ROGO.ROM) file is the image needed to program the EEPROM of the board.
+The [ROGO.ROM](https://github.com/patricklaf/SVI-2017/raw/main/ROM/ROGO.ROM) file is the image needed to program the EEPROM of the board.
 
 The file combines the following elements:
 
