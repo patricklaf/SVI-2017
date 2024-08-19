@@ -4,7 +4,7 @@ La carte SVI-2017 est la recréation de la carte d'interface pour RobotArm SVI 2
 
 La carte fonctionnelle en version 1.1 est compatible avec les ordinateurs MSX.
 
-![SVI-2017](docs/img/SIVI-2017-20171211-105227.jpg)
+![SVI-2017](docs/img/SVI-2017-20171211-105227.jpg)
 
 ## Projet KiCad
 
